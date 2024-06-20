@@ -1,0 +1,22 @@
+public class BuggyCalculator {
+
+  public int add(int a, int b) {
+    // Potential division by zero
+    if (b == 0) {
+      return 0;
+    }
+    return a / b; // Incorrect operation for addition
+  }
+
+  public void duplicateCode() {
+    // Duplicate code block (can be refactored into a method)
+    System.out.println("This code is duplicated!");
+  }
+
+  public void missingComments(int value) {
+    // Missing comment explaining the purpose of the variable
+    if (value > 10) {
+      System.out.println("Value is greater than 10");
+    }
+  }
+}
